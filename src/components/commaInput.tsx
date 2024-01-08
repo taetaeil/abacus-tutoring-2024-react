@@ -1,71 +1,9 @@
-// interface HeaderProps { title: string}
-
-// function Header({ title }:HeaderProps) {
-//   return (
-//     <header>
-//       <h1 className="mb-10">{title}</h1>
-//     </header>
-//   );
-// }
-
-// import { useState, ChangeEvent } from 'react'
-
-// const CommaInput: unknown = () => {
-//   const [inputValue, setInputValue] = useState<string>('')
-
-//   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-//     const userInput = event.target.value
-
-//     // 숫자 여부 확인
-//     const isNumeric = !isNaN(userInput as any) // isNaN은 숫자가 아닌 경우 true를 반환하므로 여기에 !를 사용해 숫자 여부를 판단
-
-//     // 문자열 여부 확인
-//     const isString = typeof userInput === 'string'
-
-//     setInputValue(userInput)
-
-//     console.log(`Is Numeric: ${isNumeric}`)
-//     console.log(`Is String: ${isString}`)
-//   }
-
-//   return (
-//     <div>
-//       <input type="text" value={inputValue} onChange={handleChange} />
-//       <p>
-//         data type : <em className="text-lime-500">{typeof inputValue}</em>
-//       </p>
-//     </div>
-//   )
-// }
-
-// export default CommaInput
-
-import { useState, ChangeEvent } from 'react'
-
 const CommaInput: unknown = () => {
-  const [inputValue, setInputValue] = useState<string>('')
-
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const userInput = event.target.value
-    console.log('asdas', userInput)
-
-    // 숫자 여부 확인
-    const isNumeric = !isNaN(userInput as any) // isNaN은 숫자가 아닌 경우 true를 반환하므로 여기에 !를 사용해 숫자 여부를 판단
-
-    // 문자열 여부 확인
-    const isString = typeof userInput === 'string'
-
-    setInputValue(userInput)
-
-    console.log(`Is Numeric: ${isNumeric}`)
-    console.log(`Is String: ${isString}`)
-  }
-
   return (
     <div>
-      <input type="text" value={inputValue} onChange={handleChange} />
+      <input type="text" />
       <p>
-        data type : <em className="text-lime-500">{typeof inputValue}</em>
+        data type : <em className="text-lime-500">??</em>
       </p>
     </div>
   )
@@ -81,7 +19,7 @@ export default CommaInput
 // => handleChange 함수는 사용자가 입력한 값에 접근할 수 있습니다. 함수 이름은 상관 없으며 onChange 속성에서 이벤트를 전달해준다는 것을 이해하면 됩니다.
 //
 //
-// => 매개변수를 타입 정의한다는 것은 함수의 매개변수(parameter)에 대한 데이터 타입을 명시하는 것을 말합니다. TypeScript를 사용하면 변수, 매개변수, 반환값 등에 대한 타입을 명시적으로 지정할 수 있습니다.
+// => 매개변수의 타입 정의한다는 것은 함수의 매개변수(parameter)에 대한 데이터 타입을 명시하는 것을 말합니다. TypeScript를 사용하면 변수, 매개변수, 반환값 등에 대한 타입을 명시적으로 지정할 수 있습니다.
 //    예를 들어, 다음은 JavaScript에서의 함수 정의입니다:
 //    function add(a, b) {
 //      return a + b;
