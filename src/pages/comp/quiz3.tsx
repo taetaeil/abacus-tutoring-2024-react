@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <div>흠...</div>
+      <div>콜바이밸류 / 콜바이레퍼런스</div>
     </>
   )
 }

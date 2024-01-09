@@ -1,7 +1,10 @@
 function App() {
   return (
     <>
-      <div>버스...? 글로벌 리스너...?</div>
+      <div>
+        <p>이벤트 버스?</p>
+        <div>커스텀 이벤트? context?</div>
+      </div>
     </>
   )
 }
