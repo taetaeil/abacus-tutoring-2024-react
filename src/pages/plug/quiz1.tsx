@@ -1,7 +1,9 @@
+import CmInput from '../../components/customInput'
+
 function App() {
   return (
     <>
-      <div>흠...</div>
+      <CmInput />
     </>
   )
 }
