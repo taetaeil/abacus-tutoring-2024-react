@@ -1,11 +1,11 @@
-import CmInput from '../../components/customInput'
+import CmInput from '../../components/customInput';
 
 function App() {
   return (
     <>
       <CmInput />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

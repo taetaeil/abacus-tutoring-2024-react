@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import { numType, comma } from '../utils/addComma'
+import { useState } from 'react';
+import { numType, comma } from '../utils/addComma';
 
 function CmInput() {
-  const [num, setNum] = useState('')
-  const [revertCom, setRevertCom] = useState('')
+  const [num, setNum] = useState('');
+  const [revertCom, setRevertCom] = useState('');
 
   const handleChange = (e) => {
-    setNum(comma(numType(e.target.value)))
-  }
+    setNum(comma(numType(e.target.value)));
+  };
 
   const changeNumForm = () => {
     num
       ? setRevertCom(num.replaceAll(',', ''))
-      : alert('숫자를 먼저 입력해주세요')
-  }
+      : alert('숫자를 먼저 입력해주세요');
+  };
 
   return (
     <div>
@@ -28,14 +28,14 @@ function CmInput() {
           콤마를 제거해봅시다
         </button>
         <p>
-          <em className="text-lime-400">{revertCom ? revertCom : ''}</em>
+          <em className="text-lime-400">{revertCom || ''}</em>
         </p>
       </div>
     </div>
-  )
+  );
 }
 
-export default CmInput
+export default CmInput;
 
 // 기본부터
 // => onChange 속성은 사용자가 입력 필드의 내용을 변경할 때 발생하는 이벤트에 대한 핸들러 함수를 정의하는 데 사용됩니다.

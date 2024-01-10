@@ -6,7 +6,7 @@ function App() {
         <div>커스텀 이벤트? context?</div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

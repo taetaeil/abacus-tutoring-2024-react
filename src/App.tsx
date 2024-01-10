@@ -1,18 +1,18 @@
-import CompQuiz1 from './pages/comp/quiz1'
-import CompQuiz2 from './pages/comp/quiz2'
-import CompQuiz3 from './pages/comp/quiz3'
-import CompQuiz4 from './pages/comp/quiz4'
-import HooQuiz1 from './pages/hoo/quiz1'
-import HooQuiz2 from './pages/hoo/quiz2'
-import PlugQuiz1 from './pages/plug/quiz1'
-import PlugQuiz2 from './pages/plug/quiz2'
+import CompQuiz1 from './pages/comp/quiz1';
+import CompQuiz2 from './pages/comp/quiz2';
+import CompQuiz3 from './pages/comp/quiz3';
+import CompQuiz4 from './pages/comp/quiz4';
+import HooQuiz1 from './pages/hoo/quiz1';
+import HooQuiz2 from './pages/hoo/quiz2';
+import PlugQuiz1 from './pages/plug/quiz1';
+import PlugQuiz2 from './pages/plug/quiz2';
 
 function App() {
   const openPopup = () => {
     alert(
-      '“이 편지는 영국에서 최초로 시작되어 일년에 한 바퀴 돌면서 받는 사람에게 행운을 주었고 지금은 당신에게로 옮겨진 이 편지는...'
-    )
-  }
+      '“이 편지는 영국에서 최초로 시작되어 일년에 한 바퀴 돌면서 받는 사람에게 행운을 주었고 지금은 당신에게로 옮겨진 이 편지는...',
+    );
+  };
   return (
     <div className="p-10">
       <h1 className="text-center mb-8 text-5xl">튜터튜터튜터</h1>
@@ -125,7 +125,7 @@ function App() {
         </li>
       </ul>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

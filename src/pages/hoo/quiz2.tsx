@@ -1,34 +1,34 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 function App() {
   // ========= 최초 한번만 실행
-  const [first, setFirst] = useState('')
+  const [first, setFirst] = useState('');
   useEffect(() => {
-    setFirst(first + '얍')
-  }, [])
+    setFirst(`${first}얍`);
+  }, []);
 
   // ========= A hook이 실행 될 때
-  const [second, setSecond] = useState('')
-  useEffect(() => {}, [second])
+  const [second, setSecond] = useState('');
+  useEffect(() => {}, [second]);
 
   const secondBtn = () => {
-    setSecond(second + '얍')
-  }
+    setSecond(`${second}얍`);
+  };
 
   // ========= B hook이 실행 될 때
-  const [third, setThird] = useState('')
-  useEffect(() => {})
+  const [third, setThird] = useState('');
+  useEffect(() => {});
 
   const thirdBtn = () => {
-    setThird(third + '얍')
-  }
+    setThird(`${third}얍`);
+  };
 
   // ========= 모든 hook이 실행 될 때
-  const [fourth, setFourth] = useState(0)
+  const [fourth, setFourth] = useState(0);
   useEffect(() => {
-    console.log('얍얍')
+    console.log('얍얍');
     // setFourth(fourth + '얍')
-  })
+  });
 
   return (
     <>
@@ -69,10 +69,10 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
 
 // useEffect 함수가 동작하는 3가지 방식
 // 1. 맨 처음 한번만(마운트 될 때만)

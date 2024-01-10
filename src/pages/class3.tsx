@@ -75,7 +75,7 @@ function App() {
       <div>use로 시작하는 애는 훅이다</div>
       <div>useEffect 변화가 감지되었을 때 후처리</div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

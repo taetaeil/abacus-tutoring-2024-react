@@ -1,4 +1,4 @@
-import fruit from '../../assets/fruit.json'
+import fruit from '../../assets/fruit.json';
 // import { fruitMenu } from '../../utils/fruitMenu'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         </p>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

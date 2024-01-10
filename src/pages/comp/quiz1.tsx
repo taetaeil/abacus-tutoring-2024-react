@@ -9,16 +9,16 @@ function App(props: MyInterface) {
         type="button"
         className="bg-lime-500"
         onClick={function () {
-          props.openAlert()
+          props.openAlert();
         }}
       >
         절대 누르지 마세요.
       </button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
 
 // 기본부터
 // => void? 주로 함수가 값을 반환하지 않음을 나타냅니다. 다시 말해, void 타입은 어떠한 값도 존재하지 않는 상태를 나타냅니다.

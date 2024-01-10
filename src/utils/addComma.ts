@@ -1,7 +1,5 @@
 // =========== 콤마 추가
-export const comma = (str: string) => {
-  return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,')
-}
+export const comma = (str: string) => str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
 
 // 정규 표현식, 또는 정규식은 문자열에서 특정 문자 조합을 찾기 위한 패턴입니다.
 
@@ -36,13 +34,13 @@ export const comma = (str: string) => {
 
 // =========== 숫자가 아닌 다른 문자를 입력했을 경우
 export const numType = (str: string) => {
-  str = String(str)
+  str = String(str);
 
   // 숫자와 콤마(,)를 제외한 문자
-  const numberPattern = /[^\d,]+/g
+  const numberPattern = /[^\d,]+/g;
 
   if (numberPattern.test(str)) {
-    alert('숫자만 입력해주세요')
+    alert('숫자만 입력해주세요');
   }
-  return str.replace(/[^\d]+/g, '')
-}
+  return str.replace(/[^\d]+/g, '');
+};

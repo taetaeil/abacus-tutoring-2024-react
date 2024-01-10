@@ -1,4 +1,4 @@
-import CommaInput from '../components/commaInput'
+import CommaInput from '../components/commaInput';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
                   type="button"
                   className="bg-lime-600"
                   onChange={function () {
-                    alert('Header')
+                    alert('Header');
                   }}
                 >
                   눌러보세용
@@ -118,7 +118,7 @@ function App() {
         </li>
       </ul>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
