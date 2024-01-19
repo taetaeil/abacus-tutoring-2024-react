@@ -14,7 +14,7 @@ function App() {
     );
   };
   return (
-    <div className="p-10">
+    <div className="p-10 max-w-7xl mx-auto">
       <h1 className="text-center mb-8 text-5xl">튜터튜터튜터</h1>
       {/* <div>
         <p className="text-left">

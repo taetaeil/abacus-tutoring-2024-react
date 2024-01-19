@@ -46,7 +46,7 @@ function App() {
           </button>
         </div>
         <div>
-          <div className="flex justify-between">
+          <div className="flex justify-between mb-5">
             <div>
               <label>맨 처음 한번(마운트 될 때)</label>
               <p className="text-lime-500">결과는? {first}</p>
@@ -65,6 +65,36 @@ function App() {
                 결과는 <em className="text-lime-500">콘솔을 열어보세요</em>
               </p>
             </div>
+          </div>
+          <div>
+            <h3> useEffect의 클린업함수</h3>
+            <div>
+              클린업이란 어떤 컴포넌트가 화면에서 사라졌을 때 무언가를 실행하는 과정을 클린 업이라고 표현한다.
+              클린업 하는 방법은 useEffect안에서 return을 하고 실행되길 원하는 함수를 작성하면 된다.
+              예시는 소스파일 참고
+              <div>
+                {/* import React, { useEffect } from "react";
+                const App = () => {
+                  useEffect(()=>{
+                    // 화면에 컴포넌트가 나타났을(mount) 때 실행하고자 하는 함수를 넣어주세요.
+                    return ()=>{
+                      // 화면에서 컴포넌트가 사라졌을(unmount) 때 실행하고자 하는 함수를 넣어주세요.
+                    }
+                  }, [])
+                  return <div>hello react!</div>
+                };
+                export default App; */}
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>class 컴포넌트? 함수형 컴포넌트?</h3>
+            <p>React에서는 클래스 컴포넌트뿐만 아니라 함수형 컴포넌트와 훅스도 많이 사용됩니다.
+              특히 최신 버전의 React에서는 함수형 컴포넌트와 훅스를 사용하는 추세가 강해지고 있습니다.
+              함수형 컴포넌트는 더 간결하며, 훅스를 사용하면 상태 및 생명주기 관리가 더 편리해집니다.
+              따라서, 새로운 프로젝트를 시작한다면 함수형 컴포넌트와 훅스를 사용하는 것이 권장됩니다.
+            </p>
+            class 콤포넌트의 훅들과 어떤 관련이 있는지
           </div>
         </div>
       </div>
